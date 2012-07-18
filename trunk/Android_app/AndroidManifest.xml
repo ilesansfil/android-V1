@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" 
+	package="com.octade.droid.ilesansfil"
+    android:versionCode="4" 
+    android:versionName="0.4">
+    <application
+    	android:name=".IleSansFilApp" 
+    	android:icon="@drawable/icon" 
+    	android:label="@string/app_name" 
+    	android:theme="@android:style/Theme.NoTitleBar">
+    	<uses-library android:name="com.google.android.maps" />
+    	
+    	<activity android:name=".Splash" 
+                  android:label="@string/app_name"
+                  android:configChanges="orientation"
+				  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".IleSansFil"
+        		android:debuggable="false">
+         	<intent-filter>
+                   <action android:name="com.octade.droid.ilesansfil.IleSansFil" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MapTabView" 
+        	android:label="@string/mapview_name"
+        	android:debuggable="false">
+       		<intent-filter>
+          		<category android:name="android.intent.category.EMBED"></category>
+          		<action android:name="android.intent.action.MAIN"></action>
+       		</intent-filter>
+    	</activity>
+    	<activity android:name=".IsfWebView" 
+        	android:label="@string/webview_name">
+       		<intent-filter>
+          		<category android:name="android.intent.category.EMBED"></category>
+                <action android:name="android.intent.action.VIEW" />
+       		</intent-filter>
+    	</activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <uses-sdk android:minSdkVersion="3" />
+</manifest> 

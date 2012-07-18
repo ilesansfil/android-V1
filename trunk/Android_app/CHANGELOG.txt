@@ -1,0 +1,30 @@
+Android IleSansFil Application
+~~~~~~~~~~~~~~~~~~~~~
+
+changes in Version 0.4:
+
+fix https Connection issues
+fix Version 
+add icon on About box
+
+changes in Version 0.3:
+
+new Splash screen 
+	added IleSansFil moto
+	New loading progress indicator
+added icons on Tabs
+Fix multilingual Texts (French, english)
+new menus
+new Information tab
+	reorganize information
+	added locate closest hotspot button
+	
+
+changes in Version 0.2:
+-------------------------
+Fix Support for Android 1.5
+
+
+Version 0.1:
+-------------------------
+Initial Version

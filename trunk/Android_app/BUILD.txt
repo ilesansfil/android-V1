@@ -1,0 +1,13 @@
+This application can be built with eclipse or ant
+
+To build it with Ant, make sure that 
+	1- you set you java environment properly (java_home, ant_home, ..)
+	2- you set the android sdk in local.properties 
+	3- you add the tools directory in the android sdk in the path
+	4- you set your signature keystore in the build.properties
+
+
+Google API consideration
+
+Don't forget to set the Google API key in layout/maptabview.xml that correspond to you signature.
+

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ *******************************************************************************
+ * Copyright (c) 2010 Octade Technologies  
+ * 
+ * This file is part of the Android IleSansFil Application project
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ *
+ *  
+ *******************************************************************************
+-->
+<LinearLayout 
+	 xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/Tab03" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:orientation="vertical" 
+	android:padding="2px">
+<!--  	<TextView android:text="@string/infoTitle" 
+		android:id="@+id/InfoTitle" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:textSize="16sp"
+		android:textStyle="bold"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginBottom="10px">
+		</TextView>-->
+	<TextView android:text="@string/wifiInfoTitle" 
+		android:id="@+id/infoText10" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:textSize="14sp"
+		android:textColor="#218f33"
+		android:textStyle="bold"
+		android:layout_marginBottom="5px" 
+		android:drawableLeft="@drawable/wifi16">
+		</TextView>
+	<LinearLayout
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:layout_marginBottom="5px"
+		android:paddingBottom="2px"
+		android:background="#222">
+	  	<LinearLayout
+			android:layout_width="wrap_content" 
+			android:layout_height="fill_parent" 
+			android:orientation="vertical"
+			android:layout_weight="0.8"
+			>
+			<TextView android:text="@string/infoSSID" 
+				android:id="@+id/infoText11" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/infoText10"
+				android:layout_marginTop="6px"
+				>
+				</TextView>
+		
+			<TextView android:text="@string/infoSupplicant" 
+				android:id="@+id/infoText12" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/infoText11"			
+				>
+				</TextView>
+			</LinearLayout>			
+		<LinearLayout
+			android:layout_width="wrap_content" 
+			android:layout_height="fill_parent" 
+			android:orientation="horizontal"
+			android:gravity="right"
+			android:layout_weight="0.2"
+			> 
+<!--  		<TextView android:text="@string/ToggleButton01" 
+				android:id="@+id/infoText13" 
+				android:layout_width="wrap_content" 
+				android:layout_height="fill_parent">
+				</TextView>-->
+			<ToggleButton 
+				android:id="@+id/ToggleButton01" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:minWidth="60px"
+				android:minHeight="50px"
+				android:layout_gravity="center_vertical"
+				>
+				</ToggleButton>
+			<Button android:text="@string/wifiSettingButton" 
+				android:id="@+id/Button01" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:minWidth="90px"
+				android:minHeight="50px"
+				android:layout_gravity="center_vertical"
+				/>
+			</LinearLayout>
+	  </LinearLayout>
+	<TextView android:text="@string/locationInfoTitle" 
+			android:id="@+id/infoText20" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:textSize="14sp"
+			android:textColor="#218f33"
+			android:textStyle="bold"
+			android:layout_marginBottom="5px" 
+			android:drawableLeft="@drawable/gps">
+			</TextView>
+	<LinearLayout
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:layout_marginBottom="5px"
+		android:paddingBottom="2px"
+		android:background="#222">
+	  	<LinearLayout
+			android:layout_width="wrap_content" 
+			android:layout_height="fill_parent" 
+			android:orientation="vertical"
+			android:layout_weight="0.9">
+			<TextView  
+				android:id="@+id/TextViewLat" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content">
+				</TextView>
+			<TextView  
+				android:id="@+id/TextViewLong" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content">
+				</TextView>
+			</LinearLayout>
+		<Button android:text="@string/hotSpotLocateButton" 
+			android:id="@+id/hotSpotLocateButton" 
+			android:layout_width="wrap_content" 
+			android:layout_height="fill_parent"
+			android:layout_weight="0.1"/>
+		</LinearLayout>
+	<TextView android:text="@string/infoHotSpot" 
+		android:id="@+id/TextView22" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:textColor="@color/opaque_green">
+	</TextView>
+	
+  	<ScrollView   
+		android:id="@+id/ScrollView21"  
+		android:layout_height="fill_parent"   
+		android:layout_width="fill_parent"
+		android:background="#222">  
+		<TextView  
+			android:id="@+id/TextView23" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content">
+			</TextView>
+				
+		</ScrollView>
+
+</LinearLayout>
+
